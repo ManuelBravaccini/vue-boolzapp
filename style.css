@@ -1,5 +1,33 @@
 *{
     font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: black;
-    color: white;
+}
+
+div.wall{
+    height: 100vh;
+    background: linear-gradient(#009688 0%, #009688 15%, #d5dbd8 15%, #d5dbd8 100%);
+}
+
+section{
+    height: 100vh;
+}
+
+div.leftSide{
+    width: 40%;
+    height: 100%;
+    background-color: magenta;
+}
+
+div.rightSide{
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+}
+
+div.contacts{
+    background-color: wheat;
+    height: calc(100%/10);
+}
+
+img.profiles{
+    width: 15%;
 }
