@@ -1,33 +1,72 @@
-*{
+* {
     font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-div.wall{
+div.wall {
     height: 100vh;
     background: linear-gradient(#009688 0%, #009688 15%, #d5dbd8 15%, #d5dbd8 100%);
 }
 
-section{
+section.container {
     height: 100vh;
 }
 
-div.leftSide{
+/* Shared classes between right and left side */
+section.top-bar {
+    background-color: #eaeaea;
+    height: 70px;
+    width: 100%;
+}
+
+/* Left side */
+section.leftSide {
+    background-color: magenta;
     width: 40%;
     height: 100%;
-    background-color: magenta;
 }
 
-div.rightSide{
+section.top-bar.user-details {
+    border-right: 1px solid #b1b1b1;
+}
+
+section.notification-banner {
+    background-color: #8edafc;
+    width: 100%;
+    height: 80px;
+}
+
+section.search-contacts {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border: 8px solid #fafafa;
+}
+
+/* Right Side */
+section.rightSide {
+    background-color: aqua;
     width: 60%;
     height: 100%;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-div.contacts{
+section.input-chat {
+    background-color: #f3eeea;
+    height: 70px;
+    width: 100%;
+}
+
+
+
+
+/*testing*/
+div.contacts {
     background-color: wheat;
     height: calc(100%/10);
 }
 
-img.profiles{
+img.profiles {
     width: 15%;
 }
