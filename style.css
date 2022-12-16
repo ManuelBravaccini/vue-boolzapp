@@ -18,8 +18,9 @@ section.top-bar {
     width: 100%;
 }
 
+
 /* Left side */
-section.leftSide {
+section.left-side {
     background-color: magenta;
     width: 40%;
     height: 100%;
@@ -35,6 +36,8 @@ section.notification-banner {
     height: 80px;
 }
 
+
+/* Contact style */
 section.search-contacts {
     background-color: white;
     width: 100%;
@@ -42,8 +45,43 @@ section.search-contacts {
     border: 8px solid #fafafa;
 }
 
+div.contact {
+    background-color: white;
+    height: 80px;
+    padding: .5rem;
+    font-size: .8rem;
+    display: flex;
+}
+
+div.contact .contact-profile {
+    width: 57px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+div.contact-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.contact .contact-profile img {
+    width: 100%;
+    height: 100%;
+}
+
+div.contact .contact-info {
+    padding: .5rem;
+}
+
+div.contact-info h2 {
+    font-size: 1rem;
+}
+
+
 /* Right Side */
-section.rightSide {
+section.right-side {
     background-color: aqua;
     width: 60%;
     height: 100%;
@@ -56,17 +94,4 @@ section.input-chat {
     background-color: #f3eeea;
     height: 70px;
     width: 100%;
-}
-
-
-
-
-/*testing*/
-div.contacts {
-    background-color: wheat;
-    height: calc(100%/10);
-}
-
-img.profiles {
-    width: 15%;
 }

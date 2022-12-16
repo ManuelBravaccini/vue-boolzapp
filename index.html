@@ -16,7 +16,7 @@
   <body id="app">
     <div class="wall">
       <section class="container d-flex pt-4 pb-4">
-        <section class="leftSide">
+        <section class="left-side">
           <section class="top-bar user-details">
 
           </section>
@@ -27,16 +27,25 @@
 
           </section>
           <section class="contacts-list">
-            <div class="contacts">
-              <img class="profiles rounded-circle" src="img/avatar_1.jpg" alt="">
-            </div>
-            <div class="contacts">
-              <img class="profiles rounded-circle" src="img/avatar_1.jpg" alt="">
-              
+            <div class="contact" v-for="contact in contacts">
+              <div class="contact-profile">
+                <img :src="'./img/avatar' + contact.avatar + '.jpg'" alt="">
+              </div>
+              <div class="contact-details">
+                <div class="contact-info">
+                  <h2>
+                    {{contact.name}}
+                  </h2>
+                  <p>Ultimo messaggio inviato</p>
+                </div>
+                <div class="hour">
+                  <p>12:00</p>
+                </div>
+              </div>
             </div>
           </section>
         </section>
-        <section class="rightSide">
+        <section class="right-side">
           <section class="top-bar selected-contact">
 
           </section>
