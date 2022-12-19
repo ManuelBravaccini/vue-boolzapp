@@ -2,9 +2,10 @@ const { createApp } = Vue
 
 createApp({
   data() {
-    return {
-      contacts: [
-        {
+      return {
+          activeIndex: 0,
+          contacts: [
+              {
             name: 'Michele',
             avatar: '_1',
             visible: true,
