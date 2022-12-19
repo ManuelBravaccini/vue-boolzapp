@@ -1,8 +1,8 @@
 const { createApp } = Vue
 
 createApp({
-  data() {
-      return {
+    data() {
+        return {
           activeIndex: 0,
           contacts: [
               {
@@ -168,5 +168,10 @@ createApp({
         }
       ]
     }
-  }
+  },
+  methods: {
+    selectContact: function(contactIndex){
+        this.activeIndex = contactIndex;
+    }
+  },
 }).mount('#app')

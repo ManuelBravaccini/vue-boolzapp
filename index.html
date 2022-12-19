@@ -37,7 +37,7 @@
 
           </section>
           <section class="contacts-list"> <!--CONTACTS LIST-->
-            <div class="contact" v-for="(contact, index) in contacts" :class="(activeIndex === index) ? 'selected' : ''">
+            <div class="contact" v-for="(contact, index) in contacts" :class="(activeIndex === index) ? 'selected' : ''" :data-contact-index="index" @click="selectContact(index)">
               <div class="profile-picture">
                 <img :src="'./img/avatar' + contact.avatar + '.jpg'" alt="">
               </div>

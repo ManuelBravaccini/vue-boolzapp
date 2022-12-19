@@ -78,7 +78,11 @@ div.contact {
     display: flex;
 }
 
-div.contact .selected{
+div.contact:hover {
+    cursor: pointer;
+}
+
+div.contact.selected{
     background-color: #e9ebeb;
 }
 
