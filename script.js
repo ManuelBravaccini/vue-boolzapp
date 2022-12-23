@@ -177,16 +177,26 @@ createApp({
             this.activeIndex = contactIndex;
         },
 
-        sendNewMessage(message, index) {
+        addNewMessage(message, index, sentOrNot = true) {
             const newMessage = {
                 date: '',
                 message: message,
-                status: 'sent'
+                status: (sentOrNot) ? 'sent' : 'received'
             }
 
             this.contacts[index].messages.push(newMessage);
 
             this.newMessageContent = '';
-        }
+        },
+
+        sendNewMessage(message, index) {
+            this.addNewMessage(message, index, true);
+
+            setTimeout(() => {
+                this.addNewMessage('Ok', index, false);
+            }, 3000);
+        },
+
+
     },
 }).mount('#app')
