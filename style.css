@@ -53,7 +53,23 @@ section.notification-banner {
     height: 80px;
 }
 
+.notification-banner i {
+    background-color: white;
+    color: #8edafc;
+    font-size: 1.2rem;
+    padding: .85rem .7rem;
+    border-radius: 100%;
+    margin: 1rem;
+}
 
+.notification-banner h3{
+    font-size: 1rem;
+}
+
+.notification-banner p {
+    color: grey;
+    text-decoration: underline;
+}
 
 /* Contact list */
 section.contacts-list {
