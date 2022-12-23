@@ -194,7 +194,7 @@ createApp({
 
             setTimeout(() => {
                 this.addNewMessage('Ok', index, false);
-            }, 3000);
+            }, 1500);
         },
 
 
