@@ -62,7 +62,7 @@ section.notification-banner {
     margin: 1rem;
 }
 
-.notification-banner h3{
+.notification-banner h3 {
     font-size: 1rem;
 }
 
@@ -70,6 +70,8 @@ section.notification-banner {
     color: grey;
     text-decoration: underline;
 }
+
+
 
 /* Contact list */
 section.contacts-list {
@@ -79,7 +81,7 @@ section.contacts-list {
 
 
 
-/* Contact style */
+/*Search contacts*/
 section.search-contacts {
     background-color: white;
     width: 100%;
@@ -87,6 +89,13 @@ section.search-contacts {
     border: 8px solid #fafafa;
 }
 
+section.search-contacts input {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+/* Contact style */
 div.contact {
     background-color: white;
     height: 80px;
@@ -99,7 +108,7 @@ div.contact:hover {
     cursor: pointer;
 }
 
-div.contact.selected{
+div.contact.selected {
     background-color: #e9ebeb;
 }
 
@@ -145,6 +154,12 @@ section.right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+/*Top bar*/
+div.contact.contact-top {
+    background-color: #eaeaea;
 }
 
 

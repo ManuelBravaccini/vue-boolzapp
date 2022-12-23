@@ -34,11 +34,25 @@
           </div>
         </section>
         <section class="notification-banner"> <!--NOTIFICATION BANNER-->
-          <i class="fa-solid fa-bell-slash"></i>
-          <h3>Ricevi notifiche di nuovi messaggi</h3>
-          <p>Attiva notifiche desktop</p>
+          <!--
+            <i class="fa-solid fa-bell-slash"></i>
+            <h3>Ricevi notifiche di nuovi messaggi</h3>
+            <p>Attiva notifiche desktop</p>
+          -->
         </section>
         <section class="search-contacts"> <!--SEARCH CONTACTS-->
+          <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="contactSearchContent">
+
+
+
+
+
+
+
+
+
+
+
 
         </section>
         <section class="contacts-list"> <!--CONTACTS LIST-->
@@ -63,7 +77,22 @@
       </section>
       <section class="right-side"> <!--RIGHT SIDE-->
         <section class="top-bar selected-contact">
-
+          <div class="contact contact-top">
+            <div class="profile-picture">
+              <img :src="'./img/avatar' + contacts[activeIndex].avatar + '.jpg'" alt="">
+            </div>
+            <div class="contact-details">
+              <div class="contact-info">
+                <h2>
+                  {{contacts[activeIndex].name}}
+                </h2>
+                <p>Ultimo messaggio inviato</p>
+              </div>
+              <div class="hour">
+                <p>12:00</p>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="chat">
           <p class="message" v-for="message in contacts[activeIndex].messages"
