@@ -41,7 +41,8 @@
           -->
         </section>
         <section class="search-contacts"> <!--SEARCH CONTACTS-->
-          <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="contactSearchContent">
+          <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="contactSearchContent"
+            @keyup="searchContact(contactSearchContent)">
 
 
 
@@ -57,7 +58,7 @@
         </section>
         <section class="contacts-list"> <!--CONTACTS LIST-->
           <div class="contact" v-for="(contact, index) in contacts" :class="(activeIndex === index) ? 'selected' : ''"
-            :data-contact-index="index" @click="selectContact(index)">
+            :data-contact-index="index" @click="selectContact(index)" v-show="contact.visible">
             <div class="profile-picture">
               <img :src="'./img/avatar' + contact.avatar + '.jpg'" alt="">
             </div>

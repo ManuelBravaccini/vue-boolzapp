@@ -197,6 +197,10 @@ createApp({
             }, 1500);
         },
 
-
+        searchContact(contactName) {
+            this.contacts.forEach(contact => {
+                contact.visible = contact.name.toLowerCase().includes(contactName.toLowerCase());
+            });
+        },
     },
 }).mount('#app')
